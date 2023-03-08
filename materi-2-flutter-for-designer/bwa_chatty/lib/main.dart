@@ -17,15 +17,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class messagesPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Poppins',
-      ),
-      home: messagesPage(),
-    );
-  }
-}
+// class MessagesPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         fontFamily: 'Poppins',
+//       ),
+//       home: messagesPage(),
+//     );
+//   }
+// }
