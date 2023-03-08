@@ -7,6 +7,7 @@ Color darkBlue = Color(0xff2C3A59);
 Color greyColor = Color(0xff808BA2);
 Color darkGrey = Color(0xff50C6B);
 Color mediumGrey = Color(0xff999999);
+Color lightGrey = Color(0xffF8FAFC);
 
 TextStyle titleStyle = TextStyle(
   fontSize: 16,
