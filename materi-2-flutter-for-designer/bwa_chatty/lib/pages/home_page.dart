@@ -1,5 +1,6 @@
 import 'package:bwa_chatty/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'messages.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,6 +12,7 @@ class HomePage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
+              // Here is a profile section
               SizedBox(
                 height: 40,
               ),
@@ -44,6 +46,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
+              // This section will display messages from friends and group
               Expanded(
                 child: Container(
                   width: double.infinity,
@@ -147,33 +150,39 @@ class HomePage extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          TextButton(
-                            onPressed: () =>
-                                {Navigator.of(context).push(_createRoute())},
-                            child: Image.asset(
-                              'assets/images/group1.png',
-                              height: 55,
-                              width: 55,
-                            ),
+                          Image.asset(
+                            'assets/images/group1.png',
+                            height: 55,
+                            width: 55,
                           ),
                           SizedBox(
-                            width: 12,
+                            width: 6,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Jakarta Fair',
-                                style: titleStyle,
-                              ),
-                              SizedBox(
-                                height: 2,
-                              ),
-                              Text(
-                                'Why does everyone ca...',
-                                style: subtitlereadStyle,
-                              ),
-                            ],
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => MessagesPage(),
+                                ),
+                              );
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Jakarta Fair',
+                                  style: titleStyle,
+                                ),
+                                SizedBox(
+                                  height: 2,
+                                ),
+                                Text(
+                                  'Why does everyone ca...',
+                                  style: subtitlereadStyle,
+                                ),
+                              ],
+                            ),
                           ),
                           Spacer(),
                           Text(
