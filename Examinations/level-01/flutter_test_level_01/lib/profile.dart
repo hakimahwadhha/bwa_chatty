@@ -233,6 +233,37 @@ class ProfilePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: 380,
+                height: 80,
+                decoration: BoxDecoration(
+                  color: whiteColor,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.indigo.shade50,
+                      blurRadius: 1,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                  ),
+                  child: Column(children: [
+                    Row(
+                      children: [
+                        Icon(Icons.collections_bookmark,
+                            color: indigodarkColor, size: 30),
+                      ],
+                    ),
+                  ]),
+                ),
+              ),
             ],
           ),
         ),
