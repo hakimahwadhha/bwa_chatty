@@ -28,13 +28,13 @@ TextStyle versionStyle = TextStyle(
 );
 
 TextStyle profileStyle = TextStyle(
-  fontSize: 12,
+  fontSize: 14,
   fontWeight: FontWeight.w400,
-  color: greylightColor,
+  color: greyColor,
 );
 
 TextStyle subprofileStyle = TextStyle(
-  fontSize: 14,
+  fontSize: 16,
   fontWeight: FontWeight.w400,
   color: blackColor,
 );
