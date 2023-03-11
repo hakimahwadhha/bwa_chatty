@@ -7,7 +7,8 @@ Color darkBlue = Color(0xff2C3A59);
 Color greyColor = Color(0xff808BA2);
 Color darkGrey = Color(0xff50C6B);
 Color mediumGrey = Color(0xff999999);
-Color lightGrey = Color(0xffE5E5E5);
+Color mediumLightGrey = Color(0xffEBEFF3);
+Color lightGrey = Color(0xffF8FAFC);
 
 TextStyle titleStyle = TextStyle(
   fontSize: 16,
@@ -25,16 +26,16 @@ TextStyle subtitlereadStyle = TextStyle(
   fontWeight: FontWeight.w300,
 );
 
-TextStyle textMessageStyle = TextStyle(
-  color: darkGrey,
-  fontSize: 16,
-  fontWeight: FontWeight.w400,
-);
+// TextStyle textMessageStyle = TextStyle(
+//   color: darkGrey,
+//   fontSize: 16,
+//   fontWeight: FontWeight.w400,
+// );
 
-TextStyle textTimeStyle = TextStyle(
-  color: darkGrey,
-  fontWeight: FontWeight.w300,
-);
+// TextStyle textTimeStyle = TextStyle(
+//   color: darkGrey,
+//   fontWeight: FontWeight.w300,
+// );
 
 TextStyle textTypeStyle = TextStyle(
   color: mediumGrey,
