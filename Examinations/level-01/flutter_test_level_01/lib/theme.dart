@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Color whiteColor = Colors.white;
 Color indigodarkColor = Colors.indigo.shade900;
 Color indigoColor = Colors.indigo;
-Color greenColor = Colors.green.shade400;
+Color greenColor = Color.fromARGB(255, 30, 221, 128);
 Color greyColor = Colors.grey.shade500;
 // Color greymediumColor = Colors.grey.shade500;
 Color greylightColor = Colors.grey.shade300;
@@ -40,7 +40,7 @@ TextStyle subprofileStyle = TextStyle(
 );
 
 TextStyle programStyle = TextStyle(
-  fontSize: 12,
+  fontSize: 14,
   fontWeight: FontWeight.w400,
-  color: indigoColor,
+  color: blackColor,
 );
