@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-Color blueColor = Color(0xff1F8DF5);
-Color whiteColor = Color(0xffFFFFFF);
-Color lightBlue = Color(0xff9ED0FF);
-Color darkBlue = Color(0xff2C3A59);
-Color greyColor = Color(0xff808BA2);
-Color darkGrey = Color(0xff50C6B);
-Color mediumGrey = Color(0xff999999);
-Color mediumLightGrey = Color(0xffEBEFF3);
-Color lightGrey = Color(0xffF8FAFC);
+Color blueColor = const Color(0xff1F8DF5);
+Color whiteColor = const Color(0xffFFFFFF);
+Color lightBlue = const Color(0xff9ED0FF);
+Color darkBlue = const Color(0xff2C3A59);
+Color greyColor = const Color(0xff808BA2);
+Color darkGrey = const Color(0xff50C6B);
+Color mediumGrey = const Color(0xff999999);
+Color mediumLightGrey = const Color(0xffEBEFF3);
+Color lightGrey = const Color(0xffF8FAFC);
 
 TextStyle titleStyle = TextStyle(
   fontSize: 16,

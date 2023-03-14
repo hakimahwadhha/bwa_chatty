@@ -1,9 +1,11 @@
 import 'package:bwa_chatty/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+// import 'package:url_launcher/url_launcher_string.dart';
 import 'messages.dart';
+// import 'package:flutter/src/material/bottom_navigation_bar.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +15,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               // Here is a profile section
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Image.asset(
@@ -21,7 +23,7 @@ class HomePage extends StatelessWidget {
                 height: 100,
                 width: 100,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
@@ -32,7 +34,7 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 2,
               ),
               Text(
@@ -43,17 +45,17 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.w300,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               // This section will display messages from friends and group
               Expanded(
                 child: Container(
                   width: double.infinity,
-                  padding: EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(30),
                   decoration: BoxDecoration(
                     color: whiteColor,
-                    borderRadius: BorderRadius.vertical(
+                    borderRadius: const BorderRadius.vertical(
                       top: Radius.circular(
                         40,
                       ),
@@ -66,7 +68,7 @@ class HomePage extends StatelessWidget {
                         'Friends',
                         style: titleStyle,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -76,7 +78,7 @@ class HomePage extends StatelessWidget {
                             height: 55,
                             width: 55,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Column(
@@ -86,7 +88,7 @@ class HomePage extends StatelessWidget {
                                 'Gabriella',
                                 style: titleStyle,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 2,
                               ),
                               Text(
@@ -95,14 +97,14 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Text(
                             'Now',
                             style: subtitlereadStyle,
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -112,7 +114,7 @@ class HomePage extends StatelessWidget {
                             height: 55,
                             width: 55,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Column(
@@ -122,7 +124,7 @@ class HomePage extends StatelessWidget {
                                 'Joshuer',
                                 style: titleStyle,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 2,
                               ),
                               Text(
@@ -131,21 +133,21 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Text(
                             '20:30',
                             style: subtitlereadStyle,
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       Text(
                         'Groups',
                         style: titleStyle,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -155,43 +157,33 @@ class HomePage extends StatelessWidget {
                             height: 55,
                             width: 55,
                           ),
-                          SizedBox(
-                            width: 6,
+                          const SizedBox(
+                            width: 12,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MessagesPage(),
-                                ),
-                              );
-                            },
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Jakarta Fair',
-                                  style: titleStyle,
-                                ),
-                                SizedBox(
-                                  height: 2,
-                                ),
-                                Text(
-                                  'Why does everyone ca...',
-                                  style: subtitlereadStyle,
-                                ),
-                              ],
-                            ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Jakarta Fair',
+                                style: titleStyle,
+                              ),
+                              const SizedBox(
+                                height: 2,
+                              ),
+                              Text(
+                                'Why does everyone ca...',
+                                style: subtitlereadStyle,
+                              ),
+                            ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Text(
                             '11:11',
                             style: subtitleStyle,
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -201,7 +193,7 @@ class HomePage extends StatelessWidget {
                             height: 55,
                             width: 55,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Column(
@@ -211,7 +203,7 @@ class HomePage extends StatelessWidget {
                                 'Angga',
                                 style: titleStyle,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 2,
                               ),
                               Text(
@@ -220,14 +212,14 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Text(
                             '7:11',
                             style: subtitlereadStyle,
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -237,7 +229,7 @@ class HomePage extends StatelessWidget {
                             height: 55,
                             width: 55,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Column(
@@ -247,7 +239,7 @@ class HomePage extends StatelessWidget {
                                 'Bentley',
                                 style: titleStyle,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 2,
                               ),
                               Text(
@@ -256,24 +248,21 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
-                          Text(
+                          const Spacer(),
+                          const Text(
                             '7:11',
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Image.asset(
-                            'assets/images/btn_add.png',
-                            width: 60,
-                            height: 65,
-                          ),
-                        ],
+                      Center(
+                        child: Image.asset(
+                          'assets/images/btn_add.png',
+                          width: 70,
+                          height: 75,
+                        ),
                       ),
                       // SizedBox(
                       //   height: 3,
@@ -290,11 +279,11 @@ class HomePage extends StatelessWidget {
   }
 }
 
-Route _createRoute() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => MessagesPage(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      return child;
-    },
-  );
-}
+// Route _createRoute() {
+//   return PageRouteBuilder(
+//     pageBuilder: (context, animation, secondaryAnimation) => MessagesPage(),
+//     transitionsBuilder: (context, animation, secondaryAnimation, child) {
+//       return child;
+//     },
+//   );
+// }
