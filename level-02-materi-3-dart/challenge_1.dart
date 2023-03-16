@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable
-
 /** 
    * * Challenge 1
    * 1. Buatlah variabel dari data di bawah ini sesuai dengan tipe datanya!
@@ -26,15 +24,16 @@
    *   - Orange Squash (20k)
   */
 
-/** 
+void main() {
+  /** 
    * * Jawaban soal no. 1
    */
-void main() {
+
   String namaResto = 'Halal Seafood';
   int tahunBerdiri = 1998;
   String namaPemilik = 'Ummu Khadijah';
   String alamat = 'Jl. Mercubuana, Malang';
-  int noHP = 08123456789;
+  String noHP = '08123456789';
   bool status = true;
   List<Map> makanan = [
     {'nama': 'Kepiting Saus Inggris', 'Harga': 180000},
@@ -46,6 +45,11 @@ void main() {
     {'nama': 'Kelapa Muda', 'Harga': 30000},
     {'nama': 'Rainbow Drink', 'Harga': 25000},
     {'nama': 'Orange Squash', 'Harga': 20000},
+  ];
+  List<Map> camilan = [
+    {'nama': 'Roti Bakar', 'Harga': 15000},
+    {'nama': 'Siomay Rebus', 'Harga': 10000},
+    {'nama': 'Onde-onde', 'Harga': 2000},
   ];
 
   /**
@@ -61,11 +65,37 @@ void main() {
     'Status Buka/Tutup': status,
     'Daftar Makanan': makanan,
     'Daftar Minuman': minuman,
+    'Daftar Camilan': camilan,
   };
 
   /**
    * * Jawaban soal no. 3
    */
 
-  print(dataResto);
+  print('==================================');
+  print('Data Restoran');
+  print('==================================');
+  dataResto.forEach((key, value) {
+    if (value is List) {
+      print('----------------------------------');
+      print(key);
+      print('----------------------------------');
+      List daftarmenu = value;
+      for (var menu in daftarmenu) {
+        String tab = '';
+        int pnjg_char = menu['nama'].toString().length;
+        if (pnjg_char > 24) {
+          tab = ' ';
+        } else if (pnjg_char > 15) {
+          tab = '\t ';
+        } else {
+          tab = '\t\t ';
+        }
+        print(menu['nama'] + tab + menu['Harga'].toString());
+      }
+      print('----------------------------------');
+    } else {
+      print('$key : $value');
+    }
+  });
 }
