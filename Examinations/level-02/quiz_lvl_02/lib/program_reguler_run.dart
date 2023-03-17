@@ -73,18 +73,25 @@ class _ProgramRegulerStateRun extends State<ProgramRegulerRun> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Container(
+                    // color: greyColor,
                     child: TabBar(
                       labelColor: Colors.indigo.shade800,
                       unselectedLabelColor: Colors.grey,
-                      indicatorColor: Colors.indigo.shade800,
-                      indicatorWeight: 5,
+                      indicator: BoxDecoration(
+                          color: blueAccentColorTrans,
+                          border: Border(
+                            bottom: BorderSide(
+                              width: 5.0,
+                              color: indigoColor,
+                            ),
+                          )),
                       tabs: [
                         Tab(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
-                                Icons.menu_book_rounded,
+                                Icons.collections_bookmark,
                               ),
                               SizedBox(
                                 width: 10,

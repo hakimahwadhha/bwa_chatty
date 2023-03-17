@@ -39,3 +39,4 @@ Color indigoColor = Colors.indigo.shade800;
 Color blueAccentColor = Colors.blueAccent.shade700;
 Color greenColor = Colors.green;
 Color greyColor = Color.fromARGB(255, 216, 211, 235);
+Color blueAccentColorTrans = Color.fromRGBO(41, 98, 255, 0.1);
