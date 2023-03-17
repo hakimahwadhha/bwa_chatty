@@ -3,11 +3,19 @@ import 'package:quiz_lvl_02/theme.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProgramReguler extends StatefulWidget {
+  var dataKartu;
+  ProgramReguler(List<Map> dataKartu) {
+    this.dataKartu = dataKartu;
+  }
   @override
-  _ProgramRegulerState createState() => _ProgramRegulerState();
+  _ProgramRegulerState createState() => _ProgramRegulerState(this.dataKartu);
 }
 
 class _ProgramRegulerState extends State<ProgramReguler> {
+  var dataKartu;
+  _ProgramRegulerState(List<Map> dataKartu) {
+    this.dataKartu = dataKartu;
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -290,7 +298,7 @@ class _ProgramRegulerState extends State<ProgramReguler> {
                                                     ),
                                                     Spacer(),
                                                     Text(
-                                                      'Selesai',
+                                                      'Belum Dikerjakan',
                                                       style: subTitleOpenStyle,
                                                     ),
                                                   ],
@@ -392,7 +400,7 @@ class _ProgramRegulerState extends State<ProgramReguler> {
                                                     ),
                                                     Spacer(),
                                                     Text(
-                                                      'Selesai',
+                                                      'Belum Tersedia',
                                                       style: subTitleBelumStyle,
                                                     ),
                                                   ],
@@ -427,12 +435,7 @@ class _ProgramRegulerState extends State<ProgramReguler> {
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
-                                                          primary:
-                                                              Color.fromARGB(
-                                                                  255,
-                                                                  216,
-                                                                  211,
-                                                                  235),
+                                                          primary: greyColor,
                                                         ),
                                                         onPressed: () {},
                                                         child: Text(
@@ -499,7 +502,7 @@ class _ProgramRegulerState extends State<ProgramReguler> {
                                                     ),
                                                     Spacer(),
                                                     Text(
-                                                      'Selesai',
+                                                      'Belum Tersedia',
                                                       style: subTitleBelumStyle,
                                                     ),
                                                   ],
@@ -606,7 +609,7 @@ class _ProgramRegulerState extends State<ProgramReguler> {
                                                     ),
                                                     Spacer(),
                                                     Text(
-                                                      'Selesai',
+                                                      'Belum Tersedia',
                                                       style: subTitleBelumStyle,
                                                     ),
                                                   ],

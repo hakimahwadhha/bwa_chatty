@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_lvl_02/list_card.dart';
-import 'package:quiz_lvl_02/program_reguler.dart';
-import 'package:quiz_lvl_02/program_reguler2.dart';
+import 'program_reguler_run.dart';
+import 'map_kartu.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Plus Jakarta Sans',
       ),
-      home: ProgramReguler(),
+      home: ProgramRegulerRun(dataKartu()),
     );
   }
 }

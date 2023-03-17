@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 TextStyle titleStyle = TextStyle(
@@ -40,3 +38,4 @@ TextStyle subTitleBelumStyle = TextStyle(
 Color indigoColor = Colors.indigo.shade800;
 Color blueAccentColor = Colors.blueAccent.shade700;
 Color greenColor = Colors.green;
+Color greyColor = Color.fromARGB(255, 216, 211, 235);
