@@ -36,6 +36,15 @@ List<Map> dataKartu() {
       'waktu_berakhir': '19:00',
       'soal': '2'
     },
+    {
+      'title': 'H03 Masjid-Masjid di Madinah selain Masjid Nabawi Bag. 1',
+      'status': 'Selesai',
+      'diBuka': 'Selasa, 08 Okt',
+      'berakhir': 'Rabu, 09 Okt',
+      'waktu_diBuka': '19:00',
+      'waktu_berakhir': '19:00',
+      'soal': '2'
+    },
   ];
   return kartu;
 }
