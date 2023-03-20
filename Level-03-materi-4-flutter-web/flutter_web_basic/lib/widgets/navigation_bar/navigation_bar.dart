@@ -24,7 +24,7 @@ class BuildNavigationBar extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      width: 5,
+                      width: 1,
                       color: Color(0xffC56486),
                     ),
                   ),
