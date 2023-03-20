@@ -21,7 +21,7 @@ class BuildLinkMore extends StatelessWidget {
             title,
             style: TextStyle(
               color: Color(0xffC56486),
-              fontSize: 16,
+              fontSize: 20,
               fontWeight: FontWeight.w400,
             ),
           ),
