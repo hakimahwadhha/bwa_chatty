@@ -2,7 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 
-class NavigationBarX extends StatelessWidget {
+class BuildNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
