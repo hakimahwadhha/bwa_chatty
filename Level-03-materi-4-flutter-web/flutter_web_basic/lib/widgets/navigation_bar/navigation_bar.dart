@@ -20,8 +20,24 @@ class BuildNavigationBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      width: 5,
+                      color: Color(0xffC56486),
+                    ),
+                  ),
+                ),
+                child: _NavBarItem(
+                  'Guides',
+                ),
+              ),
+              SizedBox(
+                width: 60,
+              ),
               _NavBarItem(
-                'Episodes',
+                'Pricing',
               ),
               SizedBox(
                 width: 60,
